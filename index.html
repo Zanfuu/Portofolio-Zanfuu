@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="bg-dark text-light">
-    <!-- Header/Navigation -->
+    <!-- ================= HEADER/NAVIGATION ================= -->
     <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
         <div class="container">
             <a class="navbar-brand" href="#">FNA</a>
@@ -21,30 +21,18 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto gap-3">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#certifications">Certifications</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">My Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">My Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#certifications">My Certifications</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Home Section -->
+    <!-- ================= HOME SECTION ================= -->
     <section id="home" style="background:#020312;">
         <div class="container">
             <h1 class="display-4 fw-bold">Hi, I'm <span style="background:linear-gradient(90deg,#FF6B57,#FF795E);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Fauzan Naufal Azmi</span></h1>
@@ -57,7 +45,7 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- ================= ABOUT SECTION ================= -->
     <section id="about" class="py-5 about-section" style="background:#080A17;">
         <div class="container">
             <h2 class="text-center mb-5">About Me</h2>
@@ -77,10 +65,10 @@
         </div>
     </section>
 
-    <!-- Skills Section -->
+    <!-- ================= MY SKILLS SECTION ================= -->
     <section id="skills" class="py-5" style="background:#020312;">
         <div class="container">
-            <h2 class="text-center mb-5">My Skills</h2>
+            <h2 class="text-center mb-5">My <span style="background:linear-gradient(90deg,#FF6B57,#FF795E);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Skills</span></h2>
             <div class="row g-4">
                 <div class="col-md-3">
                     <div class="skill-card text-center p-4">
@@ -114,14 +102,13 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
+    <!-- ================= MY FEATURED PROJECTS SECTION ================= -->
     <section id="projects" class="py-5" style="background:#080A17;">
         <div class="container">
-            <h2 class="text-center mb-5">My Featured Projects</h2>
+            <h2 class="text-center mb-5">My <span style="background:linear-gradient(90deg,#FF6B57,#FF795E);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Featured Projects</span></h2>
             <div class="row g-4">
                 <div class="col-md-6">
                     <div class="card bg-dark border-primary project-card">
-                        <!-- Project Image Space - Recommended size: 800x400px -->
                         <div class="project-image-container">
                             <img src="images/projects/project1.jpg" alt="Cloud Infrastructure Automation" class="project-image">
                         </div>
@@ -134,7 +121,6 @@
                 </div>
                 <div class="col-md-6">
                     <div class="card bg-dark border-primary project-card">
-                        <!-- Project Image Space - Recommended size: 800x400px -->
                         <div class="project-image-container">
                             <img src="images/projects/project2.jpg" alt="CI/CD Pipeline Implementation" class="project-image">
                         </div>
@@ -152,30 +138,36 @@
         </div>
     </section>
 
-    <!-- Certifications Section -->
+    <!-- ================= MY CERTIFICATIONS SECTION ================= -->
     <section id="certifications" class="py-5" style="background:#020312;">
         <div class="container">
-            <h2 class="text-center mb-5">My Certifications</h2>
+            <h2 class="text-center mb-5">My <span style="background:linear-gradient(90deg,#FF6B57,#FF795E);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Certifications</span></h2>
             <div class="row g-4 justify-content-center">
                 <div class="col-md-4">
                     <div class="cert-card text-center">
                         <img src="images/cert1.jpg" alt="AWS Certification" class="img-fluid mb-3">
                         <h4 class="cert-title">AWS Solutions Architect</h4>
-                        <p class="cert-desc">Professional certification in AWS cloud architecture</p>
+                        <div class="mb-2"><span class="badge bg-primary">Amazon Web Services</span></div>
+                        <div class="mb-2"><i class="fa-regular fa-calendar"></i> <b>Masa Berlaku:</b> 2023-2026</div>
+                        <div class="mb-2"><i class="fa-solid fa-book"></i> <b>Materi:</b> Cloud Architecture, Security, Deployment, Monitoring</div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="cert-card text-center">
                         <img src="images/cert2.jpg" alt="Kubernetes Certification" class="img-fluid mb-3">
                         <h4 class="cert-title">Certified Kubernetes Administrator</h4>
-                        <p class="cert-desc">Expertise in Kubernetes cluster management</p>
+                        <div class="mb-2"><span class="badge bg-primary">Cloud Native Computing Foundation</span></div>
+                        <div class="mb-2"><i class="fa-regular fa-calendar"></i> <b>Masa Berlaku:</b> 2022-2025</div>
+                        <div class="mb-2"><i class="fa-solid fa-book"></i> <b>Materi:</b> Cluster Management, Networking, Security, Troubleshooting</div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="cert-card text-center">
                         <img src="images/cert3.jpg" alt="Docker Certification" class="img-fluid mb-3">
                         <h4 class="cert-title">Docker Certified Associate</h4>
-                        <p class="cert-desc">Professional containerization skills</p>
+                        <div class="mb-2"><span class="badge bg-primary">Docker Inc.</span></div>
+                        <div class="mb-2"><i class="fa-regular fa-calendar"></i> <b>Masa Berlaku:</b> 2021-2024</div>
+                        <div class="mb-2"><i class="fa-solid fa-book"></i> <b>Materi:</b> Containerization, Orchestration, Security, Storage</div>
                     </div>
                 </div>
             </div>
@@ -185,7 +177,7 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- ================= CONTACT SECTION ================= -->
     <section id="contact" class="py-5 contact-section" style="background:#080A17;">
         <div class="container">
             <h2 class="text-center mb-4">Contact</h2>
@@ -220,7 +212,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- ================= FOOTER ================= -->
     <footer class="py-4 bg-dark text-center" style="background:#020312 !important;">
         <div class="container">
             <p class="mb-2">© 2025 Naufal – All rights reserved.</p>
