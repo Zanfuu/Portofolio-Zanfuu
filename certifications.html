@@ -47,26 +47,8 @@
     }
     </style>
 </head>
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">FNA</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto gap-3">
-                    <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#certifications">Certifications</a></li>
-                    <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <section class="py-5 about-section">
+<body class="bg-dark text-light">
+    <section class="py-5" style="background:#080A17;">
         <div class="container">
             <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap gap-2">
                 <a href="index.html#certifications" class="btn btn-outline-primary"><i class="fa fa-arrow-left me-2"></i>Back</a>
@@ -76,7 +58,7 @@
                 <!-- ubah ini: Tambahkan/ubah data sertifikat sesuai kebutuhan -->
                 <div class="col-md-6 col-lg-4">
                     <div class="cert-card text-center">
-                        <img src="images/cert1.jpg" alt="AWS Certification" class="img-fluid mb-3">
+                        <img src="certificates-img/Linux_System_Administration-ADINUSA.png" alt="AWS Certification" class="img-fluid mb-3">
                         <h4 class="cert-title">AWS Solutions Architect</h4>
                         <div class="mb-2"><span class="badge bg-primary">Amazon Web Services</span></div>
                         <div class="mb-2"><i class="fa-regular fa-calendar"></i> <b>Masa Berlaku:</b> 2023-2026</div>
@@ -85,7 +67,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="cert-card text-center">
-                        <img src="images/cert2.jpg" alt="Kubernetes Certification" class="img-fluid mb-3">
+                        <img src="certificates-img/Linux_System_Administration-ADINUSA.png" alt="Kubernetes Certification" class="img-fluid mb-3">
                         <h4 class="cert-title">Certified Kubernetes Administrator</h4>
                         <div class="mb-2"><span class="badge bg-primary">Cloud Native Computing Foundation</span></div>
                         <div class="mb-2"><i class="fa-regular fa-calendar"></i> <b>Masa Berlaku:</b> 2022-2025</div>
@@ -94,7 +76,7 @@
                 </div>
                 <div class="col-md-6 col-lg-4">
                     <div class="cert-card text-center">
-                        <img src="images/cert3.jpg" alt="Docker Certification" class="img-fluid mb-3">
+                        <img src="certificates-img/Linux_System_Administration-ADINUSA.png" alt="Docker Certification" class="img-fluid mb-3">
                         <h4 class="cert-title">Docker Certified Associate</h4>
                         <div class="mb-2"><span class="badge bg-primary">Docker Inc.</span></div>
                         <div class="mb-2"><i class="fa-regular fa-calendar"></i> <b>Masa Berlaku:</b> 2021-2024</div>
@@ -105,24 +87,71 @@
             </div>
         </div>
     </section>
-    <footer class="py-4 bg-dark text-center">
+
+    <footer class="py-5" style="background:#020312 !important;">
         <div class="container">
-            <p class="mb-2">© 2025 Naufal – All rights reserved.</p>
-            <p class="mb-0">Built with 💻 by Fauzan Naufal using HTML/CSS/JS/BOOTSTRAP</p>
+            <div class="row">
+                <!-- Column 1: Logo and Description -->
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h3 class="text-white mb-3">FNA</h3>
+                    <p class="text-white-50" style="font-size: 0.9rem;">Fauzan Naufal Azmi seorang siswa SMKN 1 Cimahi yang berusaha berguna untuk orang disekitar</p>
+                </div>
+
+                <!-- Column 2: Navigation -->
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5 class="text-white mb-3">Navigation</h5>
+                    <ul class="list-unstyled footer-nav">
+                        <li class="mb-2"><a href="index.html#home" class="text-white-50 text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="index.html#about" class="text-white-50 text-decoration-none">About</a></li>
+                        <li class="mb-2"><a href="index.html#skills" class="text-white-50 text-decoration-none">Skills</a></li>
+                        <li class="mb-2"><a href="index.html#projects" class="text-white-50 text-decoration-none">Projects</a></li>
+                        <li class="mb-2"><a href="index.html#certifications" class="text-white-50 text-decoration-none">Certificates</a></li>
+                        <li class="mb-2"><a href="index.html#contact" class="text-white-50 text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Contact Info -->
+                <div class="col-md-3 mb-4 mb-md-0">
+                    <h5 class="text-white mb-3">Contact</h5>
+                    <ul class="list-unstyled footer-contact">
+                        <li class="mb-2 text-white-50">
+                            <i class="fas fa-phone me-2"></i>+62 812-2172-0785
+                        </li>
+                        <li class="mb-2 text-white-50">
+                            <i class="fas fa-envelope me-2"></i>noir.zanfaa@gmail.com
+                        </li>
+                        <li class="mb-2 text-white-50">
+                            <i class="fas fa-map-marker-alt me-2"></i>Bandung
+                        </li>
+                        <li class="mb-2 text-white-50">
+                            <i class="fas fa-globe me-2"></i>zanfuu.com
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Column 4: Social Media -->
+                <div class="col-md-3">
+                    <h5 class="text-white mb-3">Get the latest information</h5>
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <hr class="mt-4 mb-4" style="border-color: rgba(255,255,255,0.1);">
+            <div class="text-center">
+                <p class="mb-0 text-white-50">© 2025 Fauzan Naufal Azmi - All rights reserved.</p>
+            </div>
         </div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <!-- SwiperJS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
-    window.addEventListener('scroll', function() {
-        const navbar = document.querySelector('.navbar');
-        if(window.scrollY > 10) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
     // SwiperJS init
     var swiper = new Swiper('.mySwiper', {
         effect: 'coverflow',
