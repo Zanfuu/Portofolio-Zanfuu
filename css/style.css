@@ -132,7 +132,7 @@ section {
 }
 
 .cert-card {
-    background: #23235b;
+    background: #23232b;
     padding: 32px 24px 24px 24px;
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -279,4 +279,25 @@ footer h5::after {
 .placeholder-white::placeholder {
     color: #fff !important;
     opacity: 1 !important;
+}
+
+.home-glow {
+    text-shadow:
+        0 0 8px #00c2ff,
+        0 0 16px #00c2ff,
+        0 0 32px #00c2ff,
+        0 0 48px #00c2ff99,
+        0 0 2px #fff,
+        1px 1px 2px #fff,
+        -1px -1px 2px #fff;
+    color: #00c2ff;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.home-outline {
+    -webkit-text-stroke: 2px #fff;
+    text-stroke: 2px #fff;
+    color: #00c2ff;
+    font-weight: 900;
 } 
