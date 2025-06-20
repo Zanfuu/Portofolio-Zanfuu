@@ -1,20 +1,23 @@
-name: HTML Lint & Deploy
+name: Lint & Deploy to GitHub Pages
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
 
 jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Setup Node
-        uses: actions/setup-node@v3
+      - uses: actions/setup-node@v3
         with:
           node-version: '18'
-      - name: Install htmlhint
-        run: npm install -g htmlhint
-      - name: Run htmlhint
-        run: htmlhint "**/*.html"
+      - run: npm install -g htmlhint
+      - run: htmlhint "**/*.html"
 
   deploy:
     needs: lint
@@ -25,5 +28,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./  # Karena file index.html kamu ada di root
-          publish_branch: gh-pages  # <--- Tambahan penting
+          publish_dir: ./          # <--- Deploy dari root folder
+          publish_branch: gh-pages
+          force_orphan: true       # <--- Bikin branch baru tiap kaligit
