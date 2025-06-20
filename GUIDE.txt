@@ -1,0 +1,124 @@
+WEBSITE PORTFOLIO GUIDE
+=====================
+
+This guide will help you customize your portfolio website. The website is built using HTML, CSS, and Bootstrap, making it easy to modify.
+
+1. PROJECT IMAGES
+----------------
+- Location: images/projects/
+- Recommended size: 800x400 pixels
+- Format: JPG or PNG
+- Naming: project1.jpg, project2.jpg, etc.
+
+2. CERTIFICATION IMAGES
+----------------------
+- Location: images/
+- Recommended size: 600x400 pixels
+- Format: JPG or PNG
+- Naming: cert1.jpg, cert2.jpg, cert3.jpg
+
+3. BACKGROUND IMAGE
+------------------
+- Location: images/
+- Recommended size: 1920x1080 pixels
+- Format: JPG
+- File name: background.jpg
+
+4. MODIFYING CONTENT
+-------------------
+A. Home Section (index.html)
+   - Find the section with id="home"
+   - Update the name, title, and description
+   - Example:
+     <h1>Hi, I'm [Your Name]</h1>
+     <h2>[Your Title]</h2>
+     <p>[Your Description]</p>
+
+B. About Section
+   - Find the section with id="about"
+   - Update the paragraphs inside the col-lg-8 div
+   - Each paragraph is wrapped in <p> tags
+
+C. Skills Section
+   - Find the section with id="skills"
+   - Each skill is in a col-md-3 div
+   - Update the icon class (using Font Awesome)
+   - Update the skill name and description
+
+D. Projects Section
+   - Main page shows 2 featured projects
+   - All projects are in projects/all-projects.html
+   - Each project card has:
+     * Image (800x400px)
+     * Title
+     * Description
+     * Read More button
+
+E. Certifications Section
+   - Find the section with id="certifications"
+   - Each certification has:
+     * Image (600x400px)
+     * Title
+     * Description
+
+F. Contact Section
+   - Find the section with id="contact"
+   - Update the social media links
+   - Example:
+     <a href="https://github.com/[your-username]">
+     <a href="https://linkedin.com/in/[your-username]">
+
+5. CUSTOMIZING COLORS
+--------------------
+Open css/style.css to modify colors:
+- Primary color: #0d6efd (blue)
+- Background: #121212 (dark)
+- Text: #e0e0e0 (light)
+- Secondary text: #a0a0a0 (gray)
+
+6. ADDING NEW PROJECTS
+---------------------
+1. Add project image to images/projects/
+2. Copy a project card in projects/all-projects.html
+3. Update:
+   - Image source
+   - Title
+   - Description
+   - Link to project detail page
+4. Create new project detail page in projects/ folder
+   (use project1.html as template)
+
+7. CREATING PROJECT DETAIL PAGES
+------------------------------
+1. Copy project1.html
+2. Update:
+   - Title in <title> tag
+   - Project title
+   - Project badges
+   - Project overview
+   - Key features
+   - Technical implementation
+
+8. RESPONSIVE DESIGN
+-------------------
+The website is fully responsive:
+- Desktop: Full layout
+- Tablet: Adjusted spacing
+- Mobile: Stacked layout
+- Images automatically resize
+
+9. TROUBLESHOOTING
+-----------------
+- If images don't appear, check file paths
+- If styles don't apply, check CSS file path
+- If links don't work, check href attributes
+- If layout breaks, check Bootstrap classes
+
+10. DEPLOYMENT
+-------------
+1. Upload all files to your web hosting
+2. Keep the same folder structure
+3. Make sure all file permissions are correct
+4. Test all links and images
+
+Need help? Check the HTML comments in each file for additional guidance! 

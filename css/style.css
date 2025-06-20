@@ -1,0 +1,303 @@
+/* Modern Portfolio Black-White Theme */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #fff;
+    background: #0a0a23;
+}
+
+.navbar {
+    background: #000000 !important;
+    transition: background 0.3s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+.navbar.scrolled {
+    background: rgba(0,0,0,0.85) !important;
+}
+
+.navbar-nav {
+    gap: 1.5rem !important;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #ffb400 !important;
+    letter-spacing: 2px;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: #fff !important;
+    position: relative;
+    transition: color 0.3s;
+    padding-bottom: 4px;
+}
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #ffb400 0%, #00c2ff 100%);
+    transition: width 0.3s;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.nav-link:hover {
+    color: #ffb400 !important;
+}
+.nav-link:hover::after {
+    width: 100%;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.about-section, .contact-section {
+    background: #1a1a40;
+    border-radius: 18px;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+    margin-bottom: 40px;
+}
+.about-photo {
+    border: 5px solid #23272f;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.18);
+}
+.about-list {
+    color: #d1d1d1;
+    margin-top: 1rem;
+    padding-left: 1.2rem;
+}
+.about-list li {
+    margin-bottom: 0.5rem;
+    font-size: 1.08rem;
+}
+.badge.bg-secondary {
+    background: #23272f !important;
+    color: #fff !important;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-left: 0.3rem;
+}
+.badge.bg-light {
+    background: #fff !important;
+    color: #23272f !important;
+    font-weight: 500;
+    font-size: 0.95rem;
+    margin-right: 0.3rem;
+}
+
+.skill-card, .project-card, .cert-card {
+    background: #23235b;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+}
+.skill-card:hover, .project-card:hover, .cert-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.28);
+}
+.skill-description {
+    color: #bdbdbd;
+}
+
+.project-image-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    background: #000000;
+}
+.project-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+    background: #000000;
+}
+.project-card:hover .project-image {
+    transform: scale(1.05);
+}
+.card-title, .cert-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #ffb400 !important;
+}
+.card-text, .cert-desc {
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
+
+.cert-card {
+    background: #23232b;
+    padding: 32px 24px 24px 24px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    border: none;
+    min-height: 400px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+    justify-content: flex-start;
+    text-align: center;
+}
+.cert-card img {
+    border-radius: 5px;
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    background: #000000;
+    margin-bottom: 1.2rem;
+}
+
+.btn-primary, .btn-outline-primary {
+    background: #FF4D00;
+    color: #fff;
+    border: none;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.12), 0 0 8px 0 #ff4d0033, 0 0 16px 0 #ff4d0022;
+    transition: all 0.3s, box-shadow 0.3s;
+}
+.btn-primary:hover, .btn-outline-primary:hover {
+    background: #fff;
+    color: #FF4D00;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.18), 0 0 16px 2px #ff4d0088, 0 0 32px 4px #ff4d0055;
+    border: none;
+}
+
+/* Footer Styles */
+footer {
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+footer h3 {
+    background: linear-gradient(90deg,#FF6B57,#FF795E);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+footer h5 {
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+footer h5::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 30px;
+    height: 2px;
+    background: linear-gradient(90deg,#FF6B57,#FF795E);
+}
+
+.footer-nav a {
+    transition: all 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: #FF6B57 !important;
+    padding-left: 5px;
+}
+
+.footer-contact li {
+    transition: all 0.3s ease;
+}
+
+.footer-contact li:hover {
+    color: #FF6B57 !important;
+    transform: translateX(5px);
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background: linear-gradient(90deg,#FF6B57,#FF795E);
+    transform: translateY(-3px);
+}
+
+@media (max-width: 768px) {
+    footer {
+        text-align: center;
+    }
+    
+    footer h5::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .social-icons {
+        justify-content: center;
+    }
+    section {
+        padding: 60px 0;
+    }
+    .about-section, .contact-section {
+        border-radius: 0;
+        margin-bottom: 24px;
+    }
+    .skill-card, .cert-card {
+        margin-bottom: 20px;
+    }
+    .project-image-container {
+        height: 180px;
+    }
+    .cert-card {
+        min-height: 320px;
+        padding: 20px 10px 16px 10px;
+    }
+    .cert-card img {
+        height: 140px;
+    }
+    #home h1 {
+        font-size: 2.1rem;
+    }
+    #home h2 {
+        font-size: 1.3rem;
+    }
+}
+
+.placeholder-white::placeholder {
+    color: #fff !important;
+    opacity: 1 !important;
+}
+
+.home-glow {
+    text-shadow:
+        0 0 8px #00c2ff,
+        0 0 16px #00c2ff,
+        0 0 32px #00c2ff,
+        0 0 48px #00c2ff99,
+        0 0 2px #fff,
+        1px 1px 2px #fff,
+        -1px -1px 2px #fff;
+    color: #00c2ff;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.home-outline {
+    -webkit-text-stroke: 2px #fff;
+    text-stroke: 2px #fff;
+    color: #00c2ff;
+    font-weight: 900;
+} 
